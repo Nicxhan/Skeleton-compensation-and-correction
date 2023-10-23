@@ -28,7 +28,7 @@ This repository holds the codebase, dataset and models for the paper>
 
 
 ## Visulization of ST-GCN in Action
-Our demo for skeleton based action recognition:
+Demo for skeleton based action recognition:
 <p align="center">
     <img src="resource/info/demo_video.gif", width="1200">
 </p>
@@ -37,7 +37,7 @@ Our demo for skeleton based action recognition:
 
 
 ## Prerequisites
-Our codebase is based on **Python3** (>=3.5). There are a few dependencies to run the code. The major libraries we depend are
+Codebase is based on **Python3** (>=3.5). There are a few dependencies to run the code. The major libraries we depend are
 - [PyTorch](http://pytorch.org/) (Release version 0.4.0)
 - [Openpose@92cdcad](https://github.com/yysijie/openpose) (Optional: for demo only)
 - FFmpeg (Optional: for demo only), which can be installed by `sudo apt-get install ffmpeg`
@@ -49,12 +49,12 @@ cd torchlight; python setup.py install; cd ..
 ```
 
 ### Get pretrained models
-We provided the pretrained model weithts of our **ST-GCN**. The model weights can be downloaded by running the script
+Pretrained model weithts of **ST-GCN** was provided. The model weights can be downloaded by running the script
 ```
 bash tools/get_models.sh
 ```
 <!-- The downloaded models will be stored under ```./models```. -->
-You can also obtain models from [GoogleDrive](https://drive.google.com/drive/folders/1IYKoSrjeI3yYJ9bO0_z_eDo92i7ob_aF) or [BaiduYun](https://pan.baidu.com/s/1dwKG2TLvG-R1qeIiE4MjeA#list/path=%2FShare%2FAAAI18%2Fst-gcn%2Fmodels&parentPath=%2FShare), and manually put them into ```./models```.
+
 
 ## Demo
 To visualize how ST-GCN exploit local correlation and local pattern, we compute the feature vector magnitude of each node in the final spatial temporal graph, and overlay them on the original video. **Openpose** should be ready for extracting human skeletons from videos. The skeleton based action recognition results is also shwon thereon.
