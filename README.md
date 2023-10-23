@@ -1,4 +1,19 @@
-# Spatial Temporal Graph Convolutional Networks (ST-GCN)
+# Skeleton compensation and correction
+
+Our demo for skeleton compensation and correction based action recognition:
+<p align="center">
+    <img src="resource/info/correction_demo1.gif", width="1200">
+</p>
+The  above results is from nursing care task data.
+
+Utilizing the action characteristics extracted from the Spatial-Temporal Graph 
+Convolutional Network (ST-GCN), in conjunction with the kinematic chain analysis, 
+a comprehensive evaluation is performed to determine both the structural integrity 
+and the likelihood of erroneous identification within the skeletal framework. 
+Subsequently, a compensatory mechanism is employed to rectify any discrepancies 
+and refine the overall skeletal representation.
+
+## Spatial Temporal Graph Convolutional Networks (ST-GCN)
 A graph convolutional network for skeleton based action recognition.
 
 <div align="center">
@@ -19,23 +34,6 @@ Our demo for skeleton based action recognition:
 </p>
 
 
-
-Utilizing the motion characteristics extracted from the Spatial-Temporal Graph 
-Convolutional Network (ST-GCN), in conjunction with the kinematic chain analysis, 
-a comprehensive evaluation is performed to determine both the structural integrity 
-and the likelihood of erroneous identification within the skeletal framework. 
-Subsequently, a compensatory mechanism is employed to rectify any discrepancies 
-and refine the overall skeletal representation.
-
-## Skeleton compensation and correction
-Our demo for skeleton compensation and correction based action recognition:
-<p align="center">
-    <img src="resource/info/correction_demo1.gif", width="1200">
-</p>
-
-
-
-The  above results is from nursing care task dataset.
 
 
 ## Prerequisites
@@ -112,15 +110,6 @@ To speed up evaluation by multi-gpu inference or modify batch size for reducing 
 python main.py recognition -c <config file> --test_batch_size <batch size> --device <gpu0> <gpu1> ...
 ```
 
-### Results
-The expected **Top-1** **accuracy** of provided models are shown here:
-
-| Model| Kinetics-<br>skeleton (%)|NTU RGB+D <br> Cross View (%) |NTU RGB+D <br> Cross Subject (%) |
-| :------| :------: | :------: | :------: |
-|Baseline[1]| 20.3    | 83.1     |  74.3    |
-|**ST-GCN** (Ours)| **31.6**| **88.8** | **81.6** | 
-
-[1] Kim, T. S., and Reiter, A. 2017. Interpretable 3d human action analysis with temporal convolutional networks. In BNMW CVPRW. 
 
 ## Training
 To train a new ST-GCN model, run
@@ -138,20 +127,4 @@ Finally, custom model evaluation can be achieved by this command as we mentioned
 python main.py recognition -c config/st_gcn/<dataset>/test.yaml --weights <path to model weights>
 ```
 
-## Citation
-Please cite the following paper if you use this repository in your reseach.
-```
-@inproceedings{stgcn2018aaai,
-  title     = {Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition},
-  author    = {Sijie Yan and Yuanjun Xiong and Dahua Lin},
-  booktitle = {AAAI},
-  year      = {2018},
-}
-```
-
-## Contact
-For any question, feel free to contact
-```
-Sijie Yan     : ys016@ie.cuhk.edu.hk
-Yuanjun Xiong : bitxiong@gmail.com
 ```
