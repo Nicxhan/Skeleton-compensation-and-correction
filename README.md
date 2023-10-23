@@ -11,10 +11,6 @@ This repository holds the codebase, dataset and models for the paper>
 
 [[Arxiv Preprint]](https://arxiv.org/abs/1801.07455)
 
-## News & Updates
-- Feb. 21, 2019 - We provide pretrained models and training scripts on **NTU-RGB+D** and **kinetics-skeleton** datasets. So that you can achieve the performance we mentioned in the paper.
-- June. 5, 2018 - A demo for feature visualization and skeleton based action recognition is released.
-- June. 1, 2018 - We update our code base and complete the PyTorch 0.4.0 migration.
 
 ## Visulization of ST-GCN in Action
 Our demo for skeleton based action recognition:
@@ -23,42 +19,23 @@ Our demo for skeleton based action recognition:
 </p>
 
 
-ST-GCN is able to exploit local pattern and correlation from human skeletons.
-Below figures show the neural response magnitude of each node in the last layer of our ST-GCN. 
+
+Utilizing the motion characteristics extracted from the Spatial-Temporal Graph 
+Convolutional Network (ST-GCN), in conjunction with the kinematic chain analysis, 
+a comprehensive evaluation is performed to determine both the structural integrity 
+and the likelihood of erroneous identification within the skeletal framework. 
+Subsequently, a compensatory mechanism is employed to rectify any discrepancies 
+and refine the overall skeletal representation.
+
+## Skeleton compensation and correction
+Our demo for skeleton compensation and correction based action recognition:
+<p align="center">
+    <img src="resource/info/correction_demo1.gif", width="1200">
+</p>
 
 
-<table style="width:100%; table-layout:fixed;">
-  <tr>
-    <td><img width="150px" src="resource/info/S001C001P001R001A044_w.gif"></td>
-    <td><img width="150px" src="resource/info/S003C001P008R001A008_w.gif"></td>
-    <td><img width="150px" src="resource/info/S002C001P010R001A017_w.gif"></td>
-    <td><img width="150px" src="resource/info/S003C001P008R001A002_w.gif"></td>
-    <td><img width="150px" src="resource/info/S001C001P001R001A051_w.gif"></td>
-  </tr>
-  <tr>
-    <td><font size="1">Touch head<font></td>
-    <td><font size="1">Sitting down<font></td>
-    <td><font size="1">Take off a shoe<font></td>
-    <td><font size="1">Eat meal/snack<font></td>
-    <td><font size="1">Kick other person<font></td>
-  </tr>
-  <tr>
-    <td><img width="150px" src="resource/info/hammer_throw_w.gif"></td>
-    <td><img width="150px" src="resource/info/clean_and_jerk_w.gif"></td>
-    <td><img width="150px" src="resource/info/pull_ups_w.gif"></td>
-    <td><img width="150px" src="resource/info/tai_chi_w.gif"></td>
-    <td><img width="150px" src="resource/info/juggling_balls_w.gif"></td>
-  </tr>
-  <tr>
-    <td><font size="1">Hammer throw<font></td>
-    <td><font size="1">Clean and jerk<font></td>
-    <td><font size="1">Pull ups<font></td>
-    <td><font size="1">Tai chi<font></td>
-    <td><font size="1">Juggling ball<font></td>
-  </tr>
-</table>
 
-The first row of above results is from **NTU-RGB+D** dataset, and the second row is from **Kinetics-skeleton**. 
+The  above results is from nursing care task dataset.
 
 
 ## Prerequisites
