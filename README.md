@@ -1,6 +1,6 @@
 # Skeleton compensation and correction
 
-Our demo for skeleton compensation and correction based on action recognition:
+## Our demo for skeleton compensation and correction based on action recognition:
 <p align="center">
     <img src="resource/info/correction_demo1.gif", width="1200">
 </p>
@@ -8,6 +8,17 @@ Our demo for skeleton compensation and correction based on action recognition:
 <p align="center">
     <img src="resource/info/correction_demo2.gif", width="1200">
 </p>
+
+## Our demo for nursing care posture REBA assessment :
+<p align="center">
+    <img src="resource/info/REBA_demo1.gif", width="1200">
+</p>
+
+<p align="center">
+    <img src="resource/info/REBA_demo2.gif", width="1200">
+</p>
+
+
 The  above results is from nursing care task data.
 
 Utilizing the action characteristics extracted from the Spatial-Temporal Graph 
