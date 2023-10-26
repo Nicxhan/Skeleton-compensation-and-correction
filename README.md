@@ -38,7 +38,7 @@ A graph convolutional network for skeleton based action recognition.
 
 **Spatial Temporal Graph Convolutional Networks for Skeleton-Based Action Recognition** Sijie Yan, Yuanjun Xiong and Dahua Lin, AAAI 2018.
 
-[[Arxiv Preprint]](https://arxiv.org/abs/1801.07455)
+
 
 
 ## Visulization of ST-GCN in Action
